@@ -21,43 +21,36 @@ Hop/
 ## Configuração Inicial
 1. Criar estrutura de diretórios:
 ```bash
-mkdir C:\Users\elmessonjesus\Desktop\Hop\files
-mkdir C:\Users\elmessonjesus\Desktop\Hop\mysql-data
-mkdir C:\Users\elmessonjesus\Desktop\Hop\postgres-data
-
+mkdir "%USERPROFILE%\Desktop\Hop\files"
+mkdir "%USERPROFILE%\Desktop\Hop\mysql-data"
+mkdir "%USERPROFILE%\Desktop\Hop\postgres-data"
+```
 
 docker-compose up -d
 
 
 ## Serviços Disponíveis
 ### 1. MySQL (Fonte)
-- Porta: 3306
-- Credenciais:
-  - Usuário: root
-  - Senha: root
-  - Database: hopfonte (criar manualmente)
-### 2. PostgreSQL (Destino)
-- Porta: 5432
-- Credenciais:
-  - Usuário: root
-  - Senha: root
-  - Databases: dev , qa , prod
-### 3. Apache Hop Web
-- UI: http://localhost:8080
-- Credenciais:
-  - Usuário: admin
-  - Senha: admin
-- Portas:
-  - 8180: Hop Server
-  - 8181: Hop Server SSL
+- **Porta:** 3306
+- **Credenciais:**
+  - Usuário: `elmesson`
+  - Senha: `elmesson1810`
+  - Database: `hopfonte`
+
 ## Uso com DbSchema
+2. Conexão MySQL:
+   - Host: `localhost`
+   - Port: `3306`
+   - User: `elmesson`
+   - Password: `elmesson1810`
+   - Database: `hopfonte`
 1. Instale o DbSchema
 2. Conexão MySQL:
    
    - Host: localhost
    - Port: 3306
-   - User: rodrigo.pgcin
-   - Password: arruda1810
+   - User: elmesson
+   - Password: elmesson1810
    - Database: hopfonte
 3. Conexão PostgreSQL:
    

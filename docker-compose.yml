@@ -6,6 +6,9 @@ services:
     container_name: mysqlfonte
     environment:
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: elmesson
+      MYSQL_PASSWORD: elmesson1810
+      MYSQL_DATABASE: hopfonte
     ports:
       - "3306:3306"
     networks:
